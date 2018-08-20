@@ -1,6 +1,4 @@
-## Demo
-
-[Invotech Task - Live DEMO](https://karoczerwinska.github.io/Invotech_Task/)
+One page website with forms made as a recruitment task.
 
 ## Technologies used in this project:
 - HTML
