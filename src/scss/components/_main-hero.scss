@@ -1,0 +1,89 @@
+.main-hero {
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.main-form-row-info {
+  display: flex;
+  margin-top: 30px;
+}
+
+.main-form-row {
+  margin: 10px 5px;
+
+  label {
+    font-family: $font-family-secondary;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  input {
+    border: 1px solid $color-error;
+  }
+}
+
+.main-form-control {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  max-width: 560px;
+  width: 100%;
+  font-family: $font-family-secondary;
+  font-size: 15px;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 1px $color-primary;
+  }
+}
+
+textarea.main-form-control {
+  max-width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  line-height: 20px;
+}
+
+.main-form-control-error {
+  border-color: $color-error;
+  box-shadow: inset 0 0 0 1px $color-error;
+
+  &:focus {
+    border-color: $color-error;
+    box-shadow: inset 0 0 0 1px $color-error;
+  }
+}
+
+.main-form-row-last {
+  display: flex;
+  justify-content: center;
+}
+
+.main-form-btn {
+  background-color: $color-primary;
+  color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 182, 255, 1);
+  margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .main-form-row-info {
+    flex-direction: column;
+  }
+  .main-form-btn {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-form-row {
+    margin: 5px;
+  }
+  .main-form-btn {
+    padding: 20px;
+    margin: 5px;
+  }
+}

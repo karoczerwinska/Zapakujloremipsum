@@ -1,0 +1,154 @@
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 0;
+  display: inline-block;
+  min-width: 300px;
+  transition: 0.8s all;
+  cursor: pointer;
+  font-family: $font-family-secondary;
+
+  &:hover {
+    background-color: $color-button;
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.section-header {
+  margin-bottom: 80px;
+}
+
+.section-header-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 38px;
+  color: #fff;
+  font-weight: bold;
+  font-family: $font-family-primary;
+}
+
+.section-main-header {
+  margin-bottom: 80px;
+}
+
+.section-main-header-title {
+  text-align: center;
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+  font-family: $font-family-primary;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-main-contact {
+  background: linear-gradient($color-primary, $color-secondary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-main-info {
+  display: flex;
+}
+
+.section-main-image {
+  background-image: url("../images/gift-in-hands.png");
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, $color-secondary);
+    opacity: 0.5;
+  }
+}
+
+.section-main-form {
+  height: 100vh;
+  width: 50vw;
+  margin: 30px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color-error;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-error;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color-error;
+  }
+
+  .form {
+    width: 500px;
+  }
+}
+
+.section-main-contact {
+
+  font-family: $font-family-secondary;
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    margin: 10px;
+  }
+  .section-main-image {
+    display: none;
+  }
+  .section-main-form {
+    height: calc(100vh + 150px);
+    width: 100vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-main-form {
+    height: calc(100vh + 200px);
+    margin: 10px;
+  }
+}

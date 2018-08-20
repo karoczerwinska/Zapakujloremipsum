@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Recruitment task</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+    <div class="container">
+        <a href="/" class="page-logo">
+            <img src="images/gift-icon.png" class="page-logo-img" alt="CodeMasters"><span>Zapakujloremipsum.com</span>
+        </a>
+        <nav class="page-nav">
+            <ul class="page-nav-list">
+                <li><a href="">procesy</a></li>
+                <li><a href="">usługi</a></li>
+                <li><a href="">kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="section-main main-hero" id="mainMessage">
+    <div class="container">
+        <div class="section-main-info">
+            <div class="section-main-image">
+            </div>
+            <div class="section-main-form">
+                <form class="form" id="mainForm" method="post" action="">
+                    <h2 class="section-main-header-title">
+                        Napisz do mnie
+                    </h2>
+                    <div class="main-form-row-info">
+                        <div class="main-form-row">
+                            <label for="formEmail">
+                                Email
+                            </label>
+                            <input type="email" required name="email" class="main-form-control" id="formEmail" placeholder="Podaj email">
+                        </div>
+                        <div class="main-form-row">
+                            <label for="formName">
+                                Imię
+                            </label>
+                            <input type="text" required pattern="[\s\p{L} ]{3,}" name="name" class="main-form-control" id="formName" placeholder="Podaj imię">
+                        </div>
+                    </div>
+                    <div class="main-form-row">
+                        <label for="formMsg">
+                            Wiadomość
+                        </label>
+                        <textarea name="message" required pattern=".+" id="formMsg" class="main-form-control" placeholder="Message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad architecto asperiores, assumenda consectetur distinctio dolorem dolores est eveniet expedita, fuga neque nihil numquam, obcaecati odio odit quaerat quia quidem recusandae totam. At consectetur consequuntur eaque expedita natus nisi quam, quis! Aspernatur atque, consequatur corporis deleniti deserunt eius error eveniet, facilis fugiat ipsam iure placeat ratione repellat saepe sequi sint vel veniam veritatis! Aliquid at magni, officiis porro reprehenderit rerum! Aliquam commodi dolores est magnam nisi non, porro quae quis reprehenderit ut? Autem corporis cupiditate expedita hic itaque maiores modi nulla possimus quaerat, saepe sed sint temporibus voluptatibus. Dolore, nobis!</textarea>
+                    </div>
+                    <div class="main-form-row main-form-row-last">
+                        <button type="submit" class="btn main-form-btn">
+                            Napisz do mnie
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main section-main-contact" id="mainContact">
+    <div class="container">
+        <form class="form" id="mainForm" method="post" action="">
+            <h2 class="section-header-title">
+                Dodaj swój e-mail do bazy danych
+            </h2>
+            <div class="form-row-input">
+                <div class="form-row">
+                    <label for="formName">
+                        Imię
+                    </label>
+                    <input type="text" required pattern="[\s\p{L} ]{3,}" name="name" class="form-control input-name" id="formName" placeholder="Imię">
+                </div>
+                <div class="form-row">
+                    <label for="formEmail">
+                        E-mail
+                    </label>
+                    <input type="email" required name="email" class="form-control input-email" id="formEmail" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="form-row form-row-last">
+                <button type="submit" class="btn contact-form-btn">
+                    Zapisz mnie
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
